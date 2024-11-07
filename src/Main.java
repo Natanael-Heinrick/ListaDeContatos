@@ -49,6 +49,7 @@ public class Main {
         if (continuar.equalsIgnoreCase("S")) {
             System.out.println("Qual contato você deseja retirar[1º,2º,3º]: ");
             int numero = novoSc.nextInt();
+            novoSc.nextLine();
 
             // ESTRUTURA PARA APAGAR O VALOR DA LISTA
             switch (numero) {
@@ -83,7 +84,6 @@ public class Main {
             if (escolha.equalsIgnoreCase("S")) {
                 listaDeContatos(primeiro, segundo, terceiro);
                 System.out.println("LISTA ENCERRADA");
-
             } else {
                 System.out.println("============================");
                 System.out.println("FIM DA LISTA DE CONTATOS");
